@@ -45,7 +45,7 @@ public class CustomerServiceImpl implements CustomerService {
 		Driver avaliableDriver=null;
 		int driverId=Integer.MAX_VALUE;
 		for(Driver driver : driverList ){
-			if(driver.getCab().isAvailable()==false){
+			if(driver.getCab().getAvailable()==false){
 				continue;
 			}
 			if(driver.getDriverId()<driverId){
